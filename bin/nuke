@@ -13,6 +13,7 @@ if [[ ! -v CLOUD_SHELL ]]; then
   exit 1
 fi
 
+export PATH=$HOME/bin:$PATH
 export GIT_SSH_COMMAND='ssh -o StrictHostKeyChecking=no'
 
 git clean -df
