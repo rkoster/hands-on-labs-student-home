@@ -20,3 +20,4 @@ git clean -df
 git reset --hard
 git lfs install
 git pull origin master
+git lfs pull
