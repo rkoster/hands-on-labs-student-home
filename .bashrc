@@ -119,3 +119,4 @@ source /google/devshell/bashrc.google
 
 cf api api.35.241.26.200.sslip.io --skip-ssl-validation
 cf auth $(gcloud config list --format json | jq -r '.core.account') training
+cf target -o $(gcloud config list --format json | jq -r '.core.account' | cut -d@ -f1)
